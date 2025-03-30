@@ -1,0 +1,4 @@
+glom
+tabulate
+beautifulsoup4
+requests
