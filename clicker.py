@@ -204,8 +204,8 @@ while True:
         all_vacancies = set()
 
         # Получение вакансий
-        for i in range(10):  # или больше страниц
-            current_page_url = f"{url}&page={pages}"
+        for i in range(int(pages)):  # или больше страниц
+            current_page_url = f"{url}&page={i}"
             vacancies = get_vacancy_ids(current_page_url, headers, cookies, i)
             all_vacancies.update(vacancies)
             time.sleep(2)
